@@ -1,8 +1,13 @@
-def while_to_print(how_many, steps):
+# rewriting 33 to use a for loop
+
+def for_to_print(how_many, steps):
     i = 0
     numbers = []
 
-    while i < how_many:
+    for x in range(i, how_many):
+        if i == how_many:
+            break
+
         #print("At the top i is %d" % i)
         numbers.append(i)
 
@@ -15,5 +20,4 @@ def while_to_print(how_many, steps):
     for num in numbers:
         print(num)
 
-
-while_to_print(12, 3)
+for_to_print(12, 3)
